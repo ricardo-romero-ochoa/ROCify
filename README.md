@@ -18,8 +18,6 @@ git clone https://github.com/your-username/rocify.git
 cd rocify
 ```
 
-Requirements
-
 ### Requirements
 
 Ensure you have R and Python installed. Install required packages:
