@@ -20,7 +20,11 @@ cd rocify
 
 ### Requirements
 
-Ensure you have R and Python installed. Install required packages:
+Ensure you have R and Python installed. 
+
+**Python packages**:
+
+Run the following command directly from your terminal (if in Windows, use Anaconda prompt):
 
 ```bash
 pip install -r requirements.txt
@@ -28,7 +32,7 @@ pip install -r requirements.txt
 
 **R packages**:
 
-Run the following command directly from your terminal (make sure you have R installed):
+Run the following command directly from your terminal:
 
 ```bash
 Rscript install_packages.R
