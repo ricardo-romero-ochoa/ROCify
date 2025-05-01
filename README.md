@@ -11,6 +11,15 @@
 
 ## Getting Started
 
+Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/your-username/rocify.git
+cd rocify
+```
+
+Requirements
+
 ### Requirements
 
 Ensure you have R and Python installed. Install required packages:
