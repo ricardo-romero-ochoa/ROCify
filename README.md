@@ -18,6 +18,9 @@ Ensure you have R and Python installed. Install required packages:
 ```bash
 pip install -r requirements.txt
 ```
+```bash
+Rscript install_packages.R
+```
 
 ### Usage
 
