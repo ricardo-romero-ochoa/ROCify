@@ -1,0 +1,9 @@
+streamlit
+BiocManager
+pROC
+TCGAbiolinks
+SummarizedExperiment
+edgeR
+dplyr
+ggplot2
+tidyr
