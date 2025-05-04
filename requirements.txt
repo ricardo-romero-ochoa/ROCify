@@ -1,6 +1,5 @@
 streamlit
 pandas
-
 r-base
 r-base-dev
 install.packages("BiocManager", repos = "http://cran.us.r-project.org")
