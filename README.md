@@ -66,7 +66,7 @@ The app provides:
 Contributions are welcome! Submit issues and pull requests to improve this tool.
 
 ## Testing
-The app has been tested in Ubuntu 24.04.2 and in Windows 11
+The app has been tested on Ubuntu 24.04.2 and on Windows 11
 
 ## License
 
