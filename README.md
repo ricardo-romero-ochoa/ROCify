@@ -20,11 +20,11 @@ cd rocify
 
 ### Requirements
 
-Ensure you have R and Python installed. For Windows make sure Rscript is in your PATH
+Ensure you have R and Python installed. For Windows, make sure Rscript is in your PATH
 
 **Python packages**:
 
-Run the following command directly from your terminal (if in Windows, use Anaconda prompt):
+Run the following command directly from your terminal (for Windows, use Anaconda prompt):
 
 ```bash
 pip install -r requirements.txt
@@ -64,6 +64,9 @@ The app provides:
 ## Contributing
 
 Contributions are welcome! Submit issues and pull requests to improve this tool.
+
+## Testing
+The app has been tested in Ubuntu 24.04.2 and in Windows 11
 
 ## License
 
