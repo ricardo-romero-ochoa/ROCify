@@ -78,7 +78,7 @@ if st.button("🔄 Reset and Clear Results"):
     for f in ["outputs/roc_curves.png", "outputs/auc_results.csv", "outputs/optimal_cutoffs.csv", "expr_data.csv"]:
         if os.path.exists(f):
             os.remove(f)
-    st.experimental_rerun()
+    st.rerun()
 
 selected_label = st.selectbox("Choose a cancer type:", list(tcga_projects.keys()))
 tcga_project = tcga_projects[selected_label]
