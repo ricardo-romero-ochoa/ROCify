@@ -32,7 +32,7 @@ pip install -r requirements.txt
 
 **R packages**:
 
-Run the following command directly from your terminal:
+Run the following command from your terminal (you may need admin privileges):
 
 ```bash
 Rscript install_packages.R
@@ -40,7 +40,7 @@ Rscript install_packages.R
 
 ### Usage
 
-Run the Streamlit app locally (if in Windows, use Anaconda prompt):
+Run the Streamlit app locally (for Windows, use Anaconda prompt):
 
 ```bash
 streamlit run app.py
