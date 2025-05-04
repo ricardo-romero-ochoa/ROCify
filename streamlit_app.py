@@ -22,7 +22,6 @@ st.set_page_config(
     layout="wide"
 )
 
-subprocess.run(["Rscript", "install_packages.R"], check=True)
 
 
 # ✅ Branding
