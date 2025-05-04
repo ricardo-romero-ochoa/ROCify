@@ -5,6 +5,13 @@ import os
 def run_data_pipeline(tcga_project, genes):
     genes_str = ','.join(f'"{gene}"' for gene in genes)
 
+    # Create install_packages.R call to install required R libraries
+    rscript_path = shutil.which("Rscript") or "C:\\Program Files\\R\\R-4.5.0\\bin\\Rscript.exe"
+    if not os.path.exists(rscript_path):
+        raise FileNotFoundError("Rscript not found. Please ensure R is installed and in your PATH.")
+
+    subprocess.run([rscript_path, "install_packages.R"], check=True)
+
     r_script = f'''
     library(TCGAbiolinks)
     library(SummarizedExperiment)
@@ -50,14 +57,10 @@ def run_data_pipeline(tcga_project, genes):
     with open("process_data.R", "w") as f:
         f.write(r_script)
 
-    rscript_path = shutil.which("Rscript") or "C:\\Program Files\\R\\R-4.5.0\\bin\\Rscript.exe"
-    if not os.path.exists(rscript_path):
-        raise FileNotFoundError("Rscript not found. Please ensure R is installed and in your PATH.")
-
     print("Running TCGA data preparation R script...")
     subprocess.run([rscript_path, "process_data.R"], check=True)
-    # Optional cleanup:
     os.remove("process_data.R")
+
 
 
 
