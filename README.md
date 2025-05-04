@@ -43,7 +43,7 @@ Rscript install_packages.R
 Run the Streamlit app locally (for Windows, use Anaconda prompt):
 
 ```bash
-streamlit run app.py
+streamlit run streamlit_app.py
 ```
 
 Then, open your browser and navigate to `http://localhost:8501`.
