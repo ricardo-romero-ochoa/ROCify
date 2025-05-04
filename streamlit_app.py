@@ -22,6 +22,9 @@ st.set_page_config(
     layout="wide"
 )
 
+subprocess.run(["Rscript", "install_packages.R"], check=True)
+
+
 # ✅ Branding
 logo = Image.open("assets/logo.png")
 st.image(logo, width=150)
