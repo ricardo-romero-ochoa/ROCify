@@ -20,7 +20,7 @@ cd rocify
 
 ### Requirements
 
-Ensure you have R and Python installed. 
+Ensure you have R and Python installed. For Windows make sure Rscript is in your PATH
 
 **Python packages**:
 
@@ -40,7 +40,7 @@ Rscript install_packages.R
 
 ### Usage
 
-Run the Streamlit app locally:
+Run the Streamlit app locally (if in Windows, use Anaconda prompt):
 
 ```bash
 streamlit run app.py
