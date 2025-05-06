@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use ROCify in your work, please cite it as below."
+title: "ROCify: Automated ROC Curve Analysis for TCGA Genes"
+version: 1.0.0
+doi: 10.5281/zenodo.15347298  # Replace with real Zenodo DOI if published
+authors:
+  - family-names: Romero 
+    given-names: Ricardo
+    orcid: https://orcid.org/0000-0002-4589-2984  # Replace with real ORCID if desired
+date-released: 2024-05-05
+url: https://github.com/ricardo-romero-ochoa/ROCify
+repository-code: https://github.com/ricardo-romero-ochoa/ROCify
+license:  GPLv3
+type: software
+abstract: "ROCify is a Streamlit application that enables automated ROC curve analysis of gene expression data from TCGA. It integrates R (TCGAbiolinks, edgeR, pROC) and Python for a smooth, reproducible biomarker discovery workflow."
