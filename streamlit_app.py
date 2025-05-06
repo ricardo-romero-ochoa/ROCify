@@ -118,6 +118,17 @@ if st.session_state.analysis_complete:
         st.download_button("Download Optimal Cutoffs", cutoff_df.to_csv(index=False), "optimal_cutoffs.csv")
 
 
+with st.expander("📚 Citation Information"):
+    st.markdown("""
+If you use **ROCify** in your research, please cite it as:
+
+> Romero Ochoa, R. (2025). *ROCify: Automated ROC Curve Analysis for TCGA Genes* (Version 1.0.0). Zenodo.  
+> [https://doi.org/10.5281/zenodo.15347298](https://doi.org/10.5281/zenodo.15347298)
+
+📘 You can also download the citation file:
+- [CITATION.cff](https://github.com/ricardo-romero-ochoa/ROCify/blob/main/CITATION.cff)
+""")
+
 # ----------------------------------------------------------------------
 # Footer
 # ----------------------------------------------------------------------
