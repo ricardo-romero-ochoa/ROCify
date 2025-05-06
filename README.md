@@ -1,5 +1,7 @@
 # ROCify: Automated TCGA Gene Expression Analysis
 
+[![DOI](https://zenodo.org/badge/975904628.svg)](https://doi.org/10.5281/zenodo.15347297)
+
 **ROCify** is an automated pipeline designed to simplify the process of querying gene expression data from The Cancer Genome Atlas (TCGA). The application efficiently performs ROC (Receiver Operating Characteristic) analysis, computes Area Under the Curve (AUC) values, and identifies optimal expression cut-offs to facilitate biomarker discovery.
 
 ## Features
