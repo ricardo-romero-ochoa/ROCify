@@ -5,7 +5,7 @@ import os
 def run_data_pipeline(tcga_project, genes):
     genes_str = ','.join(f'"{gene}"' for gene in genes)
 
-    r_script = f'''
+    r_script = f"""
     library(TCGAbiolinks)
     library(SummarizedExperiment)
     library(edgeR)
@@ -45,20 +45,15 @@ def run_data_pipeline(tcga_project, genes):
 
     # Step 5: Export to CSV
     write.csv(expr_subset, "expr_data.csv", row.names = FALSE)
-    '''
+    """
 
     with open("process_data.R", "w") as f:
         f.write(r_script)
 
-    rscript_path = shutil.which("Rscript") or "C:\\Program Files\\R\\R-4.5.0\\bin\\Rscript.exe"
+    rscript_path = shutil.which("Rscript") or "C:\\Program Files\\R\\R-4.5.1\\bin\\Rscript.exe"
     if not os.path.exists(rscript_path):
         raise FileNotFoundError("Rscript not found. Please ensure R is installed and in your PATH.")
 
     print("Running TCGA data preparation R script...")
     subprocess.run([rscript_path, "process_data.R"], check=True)
-    # Optional cleanup:
     os.remove("process_data.R")
-
-
-
-

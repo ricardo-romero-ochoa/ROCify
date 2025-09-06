@@ -71,7 +71,7 @@ def run_roc_analysis(genes):
     with open("roc_analysis.R", "w") as f:
         f.write(r_script)
 
-    rscript_path = shutil.which("Rscript") or "C:\\Program Files\\R\\R-4.5.0\\bin\\Rscript.exe"
+    rscript_path = shutil.which("Rscript") or "C:\\Program Files\\R\\R-4.5.1\\bin\\Rscript.exe"
     if not os.path.exists(rscript_path):
         raise FileNotFoundError("Rscript not found. Please ensure R is installed and in your PATH.")
 
