@@ -24,12 +24,12 @@ cd rocify
 
 Ensure you have R and Python installed. For Windows, make sure Rscript is in your PATH
 
-Alternatevely for Windows users, edit this line in data_processing.py and streamlit_app.py
+Alternatevely for Windows users, edit this line in data_processing.py and roc_analysis.py
 
 ```bash
 rscript_path = shutil.which("Rscript") or "C:\\Program Files\\R\\R-4.5.1\\bin\\Rscript.exe"
 ```
-to point to the Rscript executable
+to point to the desired Rscript executable
 
 **Python packages**:
 
