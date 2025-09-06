@@ -24,6 +24,13 @@ cd rocify
 
 Ensure you have R and Python installed. For Windows, make sure Rscript is in your PATH
 
+Alternatevely for Windows users, edit this line in data_processing.py and streamlit_app.py
+
+```bash
+rscript_path = shutil.which("Rscript") or "C:\\Program Files\\R\\R-4.5.1\\bin\\Rscript.exe"
+```
+to point to the Rscript executable
+
 **Python packages**:
 
 Run the following command directly from your terminal (for Windows, use Anaconda prompt):
@@ -38,6 +45,17 @@ Run the following command from your terminal (you may need admin privileges):
 
 ```bash
 Rscript install_packages.R
+```
+Alternatevely, install Bioconductor packacges manually from the terminal:
+
+```bash
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+```
+and then:
+
+```bash
+BiocManager::install(c("TCGAbiolinks", "SummarizedExperiment", "edgeR"))
 ```
 
 ### Usage
